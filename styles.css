@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   
+
+
+body{
+    background: #2C3333;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto 20px;
+    font-weight: 600;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+    border: #098a09 solid 1px;
+    border-radius: 8px;
+    margin: auto;
+    height: 80px;
+    background: #2C3333;
+    display: flex;
+    align-items: center;
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 30px;
+    border-radius: 8px 0 0 8px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    background: #098a09;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+input button i{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+::placeholder{
+    font-size: 18px;
+}
+
+#show-more-btn{
+    background: #098a09;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    display: none;
+    cursor: pointer;
+}
+
+#search-result{
+    width: 98%;
+    margin: 50px auto 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 5px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#dev-details{
+    color: grey;
+    padding: 10px 20px;
+    margin: -100px auto 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer{
+    color: grey;
+    padding: 10px 20px;
+    margin: -50px auto 100px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 601px) {
+
+#search-result{
+    width: 98%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+}
